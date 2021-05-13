@@ -1,0 +1,36 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :username %>
+    <%= form.text_field :username %>
+  </div><br>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div><br>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div><br>
+
+  <div class="field">
+    <%= form.label :userheight %>
+    <%= form.text_field :userheight %>
+  </div><br>
+
+  <div class="field">
+    <%= form.label :userage %>
+    <%= form.text_field :userage %>
+  </div><br>
+
+  <div class="field">
+    <%= form.label :usergender %>
+    <%= form.text_field :usergender %>
+  </div><br>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
